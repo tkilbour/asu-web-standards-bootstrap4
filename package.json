@@ -17,15 +17,20 @@
     "@storybook/addon-jest": "^5.1.9",
     "@storybook/addon-viewport": "^5.1.9",
     "@storybook/html": "^5.1.9",
+    "babel-loader": "^8.0.6",
     "bootstrap": "^4.3.1",
+    "css-loader": "^2.1.1",
     "happo-plugin-storybook": "^2.4.0",
     "happo.io": "^3.17.0",
     "jest": "^24.8.0",
     "jest-image-snapshot": "^2.8.2",
     "jest-puppeteer": "^4.2.0",
     "jquery": "^3.4.1",
-    "popper.js": "^1.15.0"
+    "popper.js": "^1.15.0",
     "puppeteer": "^1.17.0",
+    "sass-loader": "^7.1.0",
     "storybook-readme": "5.0.4-alpha.2",
+    "style-loader": "^0.23.1",
+    "webfontloader": "^1.6.28"
   }
 }
