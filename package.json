@@ -11,9 +11,14 @@
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@fortawesome/fontawesome-free": "^5.9.0",
+    "@storybook/addon-a11y": "^5.1.9",
+    "@storybook/addon-centered": "^5.1.9",
+    "@storybook/addon-google-analytics": "^5.1.9",
+    "@storybook/addon-viewport": "^5.1.9",
     "@storybook/html": "^5.1.9",
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0"
+    "storybook-readme": "5.0.4-alpha.2",
   }
 }
