@@ -202,10 +202,10 @@ DB_PORT=3306
 | **.vscode/**                      | VSCode tasks, launch configuration and some other settings |
 | **dist/**                         | Compiled source files will be placed here |
 | **src/**                          | Source files |
-| **test**                          | Tests |
-| **test/e2e/** *.test.ts           | End-2-End tests (like e2e) |
+| **stories/**                      | Storybook stories and tests for UI components |
+| **test**                          | Separate tests folder (if needed?)  |
+| **test/e2e/** *.test.ts           | End-2-End tests |
 | **test/integration/** *.test.ts   | Integration tests |
-| **test/unit/** *.test.ts          | Unit tests |
 
 
 ![divider](./divider.png)
