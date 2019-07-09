@@ -55,14 +55,16 @@
 
 The goal of this project is to retheme the vanilla Bootstrap 4 UI Kit to meet ASU Web Standards Guidelines. The Bootstrap team have provided an [excellent guide](https://getbootstrap.com/docs/4.3/getting-started/theming/) on their suggested practices for this retheming process. The starting code committed in the `/src/scss/` folder is based on the suggestions of the Bootstrap theming guide and the lessons from the [GIOS Bootstrap 3 theme](https://github.com/gios-asu/ASU-Web-Standards-Bootstrap).
 
-StorybookJS has been configured to be the primary, live development interface for this theme, and some example stories have been installed to demonstrate how Storybook works. Once you have followed the instructions for setting up a [local development environment](#-local-development-setup),
+StorybookJS has been configured to be the primary, live development interface for this theme, and some example stories have been installed to demonstrate how Storybook works. Once you have followed the instructions for setting up a [local development environment](#-setup-local-development-environment), you will need to clone this project into a sutiable location on your local computer and initialize it for development tasks.
+
+Any text editor can be used to view and edit this project, but a specialized integrated development environment (IDE) is highly suggested. [Visual Studio Code](https://code.visualstudio.com/) is a very popular, and recommended open-source IDE for working on this project. In fact, this project is configured with VS Code settings and extension recommendations that are auto-loaded by VS Code when you load the project folder.
 
 
 ### Clone and initialize this project
 
-Once you have verified that node and yarn installed correctly, it is time to dowbnload and initialize this project and all its software dependencies.
+Once you have verified that node and yarn installed correctly, it is time to download and initialize this project and all its software dependencies.
 
-First, use your favorite git client, and clone this repo to your preferred folder on your computer; e.g. on MacOS/Linux:
+First, use your favorite git client ([Gitkraken](https://www.gitkraken.com/) is a popular and easy-to-use option), and clone this repo to your preferred folder on your computer; e.g. on MacOS/Linux:
 
 ```
 cd ~
@@ -177,6 +179,17 @@ Next, install yarn globally
 npm install yarn -g
 ```
 Yarn is an alternative package manager to `npm`. In particular, yarn provides performance and added features for monorepos and other configuration elements in our project.
+
+### Install VS Code
+
+Browse to the [VS Code homepage](https://code.visualstudio.com/) and click on the Download button. Once VS Code is downloaded, run the install package to install the software on uyour computer. Later, after you have cloned this project into a development folder on your computer, launch VS Code and then open this project folder:
+
+1. Click on the File menu
+2. Click "Add Folder to Workspace"
+3. Begin exploring!
+
+A Workspace in VS Code is your project workspace and special settings you choose to configure for the project (vs global settings that affect the entire IDE and any projects you ever work on.) You can save your project as a Workspace [File->Save Workspace As], which makes it easier to track your project and reload it and your settings in the future.
+
 
 ![divider](./divider.png)
 
