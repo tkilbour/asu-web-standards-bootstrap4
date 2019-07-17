@@ -1,10 +1,12 @@
-// Colors
-//
-// @see https://hub.asu.edu/brand-hq/brand-standards/color-palette
-//
-// Variables should follow the `$component-state-property-size` formula for
+// ASU Brand Standards overrides
+
+// All Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
+
+
+
+// defaults
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
@@ -34,14 +36,27 @@ $grays: map-merge(
   $grays
 );
 
-$blue:    #990033 !default;
+
+// ASU Brand Standards override
+// Colors reference see https://hub.asu.edu/brand-hq/brand-standards/color-palette
+$maroon: #8C1D40 !default;
+$gold:   #FFC627 !default;
+$blue:   #00A3E0 !default;
+$green:  #78BE20 !default;
+$orange: #FF7F32 !default;
+$grey:   #5C6670 !default;
+$black:  #000000 !default;
+$white:  #FFFFFF !default;
+
+// defaults
+// $blue:    #007bff !default;
+// $orange:  #fd7e14 !default;
+// $green:   #28a745 !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
 $red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
-$green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
@@ -66,8 +81,16 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+
+// ASU Brand Standards override
+$primary:       $maroon !default;
+$secondary:     $gray-400 !default;
+$rfi:           $gold !default;
+$degree:        $blue !default;
+
+// defaults
+//$primary:       $blue !default;
+//$secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -75,10 +98,13 @@ $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 
+
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(
   (
+    "rfi":        $rfi,
+    "degree":     $degree,
     "primary":    $primary,
     "secondary":  $secondary,
     "success":    $success,
