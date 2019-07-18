@@ -1,20 +1,18 @@
 // ASU Brand Standard Colors
-// Colors reference see https://hub.asu.edu/brand-hq/brand-standards/color-palette
-
+// Reference: https://hub.asu.edu/brand-hq/brand-standards/color-palette
 $maroon:     #8C1D40;
 $gold:       #FFC627;
 $blue:       #00A3E0;
 $green:      #78BE20;
 $orange:     #FF7F32;
-$grey:       #5C6670;
+$gray:       #5C6670;
+$gray-light: #dbdbdb;
 $black:      #000000;
 $white:      #FFFFFF;
-$secondary:  #dbdbdb;
-
 
 // Button colors
-// Primary and secondary button info: https://brandguide.asu.edu/Executing-the-brand/Web-and-mobile/ui-kit
+// Reference: https://brandguide.asu.edu/Executing-the-brand/Web-and-mobile/ui-kit
 $primary:    $maroon;
-$secondary:  $secondary;
+$secondary:  $gray-light;
 $rfi:        $gold;
 $degree:     $blue;
