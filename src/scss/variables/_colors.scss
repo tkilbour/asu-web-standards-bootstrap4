@@ -21,9 +21,9 @@ $alt-gray:    #DBDBDB; // used for 'secondary' color variant (e.g. btn-secondary
 // Bootstrap modifier colors
 $primary:    $maroon;
 $secondary:  $alt-gray;
-$success:    $green;
-$info:       $blue;
-$warning:    $orange;
+$success:    $alt-success;
+$info:       $alt-info;
+$warning:    $alt-warning;
 $danger:     $alt-danger; // no approved color is available for this; but wouldn't Bootstrap's $red be a better choice?
 $rfi:        $gold;
 $degree:     $blue;
