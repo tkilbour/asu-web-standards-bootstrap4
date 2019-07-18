@@ -6,13 +6,26 @@ $blue:       #00A3E0;
 $green:      #78BE20;
 $orange:     #FF7F32;
 $gray:       #5C6670;
-$gray-light: #dbdbdb;
 $black:      #000000;
 $white:      #FFFFFF;
 
-// Button colors
-// Reference: https://brandguide.asu.edu/Executing-the-brand/Web-and-mobile/ui-kit
+
+// here are additional colors as implemented on the ASU Brand Guide:
+//   https://brandguide.asu.edu/Executing-the-brand/Web-and-mobile/ui-kit
+$alt-success: #148E4B; // must be mistake in Brand website
+$alt-info:    #008ED6; // must be mistake in Brand website
+$alt-warning: #EC5937; // must be mistake in Brand website
+$alt-danger:  #BFE319; // no approved color is available to fulfill this modifier
+$alt-gray:    #DBDBDB; // used for 'secondary' color variant (e.g. btn-secondary)
+
+// Bootstrap modifier colors
 $primary:    $maroon;
-$secondary:  $gray-light;
+$secondary:  $alt-gray;
+$success:    $green;
+$info:       $blue;
+$warning:    $orange;
+$danger:     $alt-danger; // no approved color is available for this; but wouldn't Bootstrap's $red be a better choice?
 $rfi:        $gold;
 $degree:     $blue;
+// $light:      $gray-100;  // unsure what to do with these colors right now;
+// $dark:       $gray-800;  // need testing to determine if it makes sense to assign to our ASU gray colors
