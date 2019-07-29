@@ -79,8 +79,5 @@
 // @import 'related-links';
 // @import 'thumbnails';
 
-
 //== FontAwesome
-// sass-lint:disable-all
-@import '/node_modules/@fortawesome/fontawesome-free/css/all.min.css';
-// sass-lint:enable-all
+// @import '/node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';

@@ -4,6 +4,7 @@ import 'happo-plugin-storybook/register';
 
 import WebFont from 'webfontloader';
 import '!style-loader!css-loader!sass-loader!./scss-loader.scss';
+import '!style-loader!css-loader!sass-loader!../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
 
 import jquery from 'jquery';
 global.$ = jquery;
