@@ -5,6 +5,11 @@ import 'happo-plugin-storybook/register';
 import WebFont from 'webfontloader';
 import '!style-loader!css-loader!sass-loader!./scss-loader.scss';
 
+import jquery from 'jquery';
+global.$ = jquery;
+global.jQuery = jquery;
+require('bootstrap');
+
 WebFont.load({
   google: {
     families: ['Roboto:300,400,700', 'sans-serif']
