@@ -23,10 +23,8 @@
 //
 // Happy Bootstrapping!
 
-// Load Bootstrap variables and mixins
-@import "../../../../../../scss/functions";
-@import "../../../../../../scss/variables";
-@import "../../../../../../scss/mixins";
+// Load ASU Bootstrap child theme
+@import "../../../../../src/scss/boostrap-asu.scss";
 
 // Load docs components
 @import "variables";
