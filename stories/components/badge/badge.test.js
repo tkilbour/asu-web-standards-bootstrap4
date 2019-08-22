@@ -1,25 +1,25 @@
 describe('Buttons', () => {
   it('examples visually look correct', async () => {
     // APIs from jest-puppeteer
-    await page.goto('http://localhost:9009/iframe.html?id=buttons--examples');
+    await page.goto('http://localhost:9009/iframe.html?id=badges--example-badge-sizing');
     const image = await page.screenshot();
 
     // API from jest-image-snapshot
     expect(image).toMatchImageSnapshot();
   });
 
-  it('button tags visually look correct', async () => {
+  it('counter buttons visually look correct', async () => {
     // APIs from jest-puppeteer
-    await page.goto('http://localhost:9009/iframe.html?id=buttons--button-tags');
+    await page.goto('http://localhost:9009/iframe.html?id=badges--counter-badge-in-button');
     const image = await page.screenshot();
 
     // API from jest-image-snapshot
     expect(image).toMatchImageSnapshot();
   });
 
-  it('outline buttons visually look correct', async () => {
+  it('contextual variations visually look correct', async () => {
     // APIs from jest-puppeteer
-    await page.goto('http://localhost:9009/iframe.html?id=buttons--outline-buttons');
+    await page.goto('http://localhost:9009/iframe.html?id=badges--contextual-variations');
     const image = await page.screenshot();
 
     // API from jest-image-snapshot
@@ -28,7 +28,7 @@ describe('Buttons', () => {
 
   it('button sizes visually look correct', async () => {
     // APIs from jest-puppeteer
-    await page.goto('http://localhost:9009/iframe.html?id=buttons--sizes');
+    await page.goto('http://localhost:9009/iframe.html?id=badges--pill-badges-w-variations');
     const image = await page.screenshot();
 
     // API from jest-image-snapshot
@@ -37,37 +37,11 @@ describe('Buttons', () => {
 
   it('active button state visually looks correct', async () => {
     // APIs from jest-puppeteer
-    await page.goto('http://localhost:9009/iframe.html?id=buttons--active-state');
+    await page.goto('http://localhost:9009/iframe.html?id=badges--linked-badges-w-variations');
     const image = await page.screenshot();
 
     // API from jest-image-snapshot
     expect(image).toMatchImageSnapshot();
   });
 
-  it('disabled button state visually looks correct', async () => {
-    // APIs from jest-puppeteer
-    await page.goto('http://localhost:9009/iframe.html?id=buttons--disabled-state');
-    const image = await page.screenshot();
-
-    // API from jest-image-snapshot
-    expect(image).toMatchImageSnapshot();
-  });
-
-  it('button plugin for toggle state visually looks correct', async () => {
-    // APIs from jest-puppeteer
-    await page.goto('http://localhost:9009/iframe.html?id=buttons--button-plugin-toggle-state');
-    const image = await page.screenshot();
-
-    // API from jest-image-snapshot
-    expect(image).toMatchImageSnapshot();
-  });
-
-  it('checkbox and radio buttons visually look correct', async () => {
-    // APIs from jest-puppeteer
-    await page.goto('http://localhost:9009/iframe.html?id=buttons--checkbox-and-radio-buttons');
-    const image = await page.screenshot();
-
-    // API from jest-image-snapshot
-    expect(image).toMatchImageSnapshot();
-  });
 });
