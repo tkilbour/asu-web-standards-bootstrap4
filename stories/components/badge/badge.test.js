@@ -1,4 +1,4 @@
-describe('Buttons', () => {
+describe('Badges', () => {
   it('examples visually look correct', async () => {
     // APIs from jest-puppeteer
     await page.goto('http://localhost:9009/iframe.html?id=badges--example-badge-sizing');
