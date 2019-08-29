@@ -136,6 +136,8 @@ storiesOf('Components/Cards', module)
 </div>
 </div>
 
+<hr />
+
 <div class="card w-50">
 <div class="card-body">
   <h5 class="card-title">Card title</h5>
@@ -160,6 +162,8 @@ storiesOf('Components/Cards', module)
 </div>
 </div>
 
+<hr />
+
 <div class="card text-center" style="width: 18rem;">
 <div class="card-body">
   <h5 class="card-title">Special title treatment</h5>
@@ -167,6 +171,8 @@ storiesOf('Components/Cards', module)
   <a href="#" class="btn btn-primary">Go somewhere</a>
 </div>
 </div>
+
+<hr />
 
 <div class="card text-right" style="width: 18rem;">
 <div class="card-body">
