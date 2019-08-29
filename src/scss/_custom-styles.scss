@@ -1,0 +1,10 @@
+// Add additional styles here. For example, overwrite certain styles or add new components.
+// Tip: You can use bootstrap's powerful mixins here!
+
+a {
+  border-bottom: 1px dotted $maroon;
+}
+a:hover {
+  color: lighten( $maroon, 10% );
+  border-bottom: 1px dotted lighten( $maroon, 10% );
+}

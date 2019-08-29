@@ -7,6 +7,7 @@
 
 // Apply variable overrides before importing Bootstrap’s Sass files
 @import 'variables/colors';
+@import 'variables/typography';
 
 //== Bootstrap Required
 @import '../../node_modules/bootstrap/scss/functions';
@@ -66,6 +67,7 @@
 // @import 'calendar';
 // @import 'carousel';
 // etc...
+@import 'custom-styles';
 
 //= ASU extensions
 // @import 'animations';
