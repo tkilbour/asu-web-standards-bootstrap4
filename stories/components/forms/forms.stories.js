@@ -69,7 +69,13 @@ storiesOf('Components/Forms', module)
 
 .add('Sizing inputs', () => `
 <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+
+<hr />
+
 <input class="form-control" type="text" placeholder="Default input">
+
+<hr />
+
 <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
 `)
 
@@ -77,9 +83,15 @@ storiesOf('Components/Forms', module)
 <select class="form-control form-control-lg">
 <option>Large select</option>
 </select>
+
+<hr />
+
 <select class="form-control">
 <option>Default select</option>
 </select>
+
+<hr />
+
 <select class="form-control form-control-sm">
 <option>Small select</option>
 </select>
@@ -127,24 +139,36 @@ storiesOf('Components/Forms', module)
     Default checkbox
   </label>
 </div>
+
+<hr />
+
 <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
   <label class="form-check-label" for="defaultCheck2">
     Disabled checkbox
   </label>
 </div>
+
+<hr />
+
 <div class="form-check">
   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
   <label class="form-check-label" for="exampleRadios1">
     Default radio
   </label>
 </div>
+
+<hr />
+
 <div class="form-check">
   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
   <label class="form-check-label" for="exampleRadios2">
     Second default radio
   </label>
 </div>
+
+<hr />
+
 <div class="form-check disabled">
   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
   <label class="form-check-label" for="exampleRadios3">
@@ -158,22 +182,37 @@ storiesOf('Components/Forms', module)
   <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
   <label class="form-check-label" for="inlineCheckbox1">1</label>
 </div>
+
+<hr />
+
 <div class="form-check form-check-inline">
   <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
   <label class="form-check-label" for="inlineCheckbox2">2</label>
 </div>
+
+<hr />
+
 <div class="form-check form-check-inline">
   <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
   <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
 </div>
+
+<hr />
+
 <div class="form-check form-check-inline">
   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
   <label class="form-check-label" for="inlineRadio1">1</label>
 </div>
+
+<hr />
+
 <div class="form-check form-check-inline">
   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
   <label class="form-check-label" for="inlineRadio2">2</label>
 </div>
+
+<hr />
+
 <div class="form-check form-check-inline">
   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
   <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
@@ -184,6 +223,9 @@ storiesOf('Components/Forms', module)
 <div class="form-check">
   <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
 </div>
+
+<hr />
+
 <div class="form-check">
   <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
 </div>
@@ -226,7 +268,9 @@ storiesOf('Components/Forms', module)
     </div>
   </div>
 </form>
-<hr>
+
+<hr />
+
 <form>
   <div class="form-row">
     <div class="form-group col-md-6">
@@ -480,7 +524,13 @@ storiesOf('Components/Forms', module)
 
 .add('Help text for inputs', () => `
 <label for="inputPassword5">Password</label>
+
+<hr />
+
 <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+
+<hr />
+
 <small id="passwordHelpBlock" class="form-text text-muted">
   Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
 </small>
@@ -831,6 +881,9 @@ storiesOf('Components/Forms', module)
   <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
   <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
 </div>
+
+<hr />
+
 <div class="custom-control custom-radio">
   <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
   <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
@@ -842,6 +895,9 @@ storiesOf('Components/Forms', module)
   <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
   <label class="custom-control-label" for="customRadioInline1">Toggle this custom radio</label>
 </div>
+
+<hr />
+
 <div class="custom-control custom-radio custom-control-inline">
   <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
   <label class="custom-control-label" for="customRadioInline2">Or toggle this other custom radio</label>
@@ -876,6 +932,8 @@ storiesOf('Components/Forms', module)
   <option value="2">Two</option>
   <option value="3">Three</option>
 </select>
+
+<hr />
 
 <select class="custom-select custom-select-sm">
   <option selected>Open this select menu</option>
