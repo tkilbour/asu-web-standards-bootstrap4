@@ -80,7 +80,7 @@ describe('List group', () => {
     expect(image).toMatchImageSnapshot();
   });
 
-  it('Contextual colors visually looks correct', async () => {
+  it('contextual colors visually looks correct', async () => {
     // APIs from jest-puppeteer
     await page.goto('http://localhost:9009/iframe.html?id=components-list-group--contextual-colors');
     const image = await page.screenshot();
@@ -98,18 +98,18 @@ describe('List group', () => {
     expect(image).toMatchImageSnapshot();
   });
 
-  it('nAMEOFCOMPONENT visually looks correct', async () => {
+  it('with badges visually looks correct', async () => {
     // APIs from jest-puppeteer
-    await page.goto('http://localhost:9009/iframe.html?id=components-list-group--nAMEOFCOMPONENT');
+    await page.goto('http://localhost:9009/iframe.html?id=components-list-group--with-badges');
     const image = await page.screenshot();
 
     // API from jest-image-snapshot
     expect(image).toMatchImageSnapshot();
   });
 
-  it('nAMEOFCOMPONENT visually looks correct', async () => {
+  it('custom content visually looks correct', async () => {
     // APIs from jest-puppeteer
-    await page.goto('http://localhost:9009/iframe.html?id=components-list-group--nAMEOFCOMPONENT');
+    await page.goto('http://localhost:9009/iframe.html?id=components-list-group--custom-content');
     const image = await page.screenshot();
 
     // API from jest-image-snapshot
