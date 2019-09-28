@@ -1,7 +1,7 @@
-describe('Media object', () => {
+describe('Pagination', () => {
   it('example visually looks correct', async () => {
     // APIs from jest-puppeteer
-    await page.goto('http://localhost:9009/iframe.html?id=components-media-object--example');
+    await page.goto('http://localhost:9009/iframe.html?id=components-pagination--example');
     const image = await page.screenshot();
 
     // API from jest-image-snapshot
@@ -10,7 +10,7 @@ describe('Media object', () => {
 
   it('with icons visually looks correct', async () => {
     // APIs from jest-puppeteer
-    await page.goto('http://localhost:9009/iframe.html?id=components-media-object--with-icons');
+    await page.goto('http://localhost:9009/iframe.html?id=components-pagination--with-icons');
     const image = await page.screenshot();
 
     // API from jest-image-snapshot
@@ -19,7 +19,7 @@ describe('Media object', () => {
 
   it('disabled and active states visually looks correct', async () => {
     // APIs from jest-puppeteer
-    await page.goto('http://localhost:9009/iframe.html?id=components-media-object--disabled-and-active-states');
+    await page.goto('http://localhost:9009/iframe.html?id=components-pagination--disabled-and-active-states');
     const image = await page.screenshot();
 
     // API from jest-image-snapshot
@@ -28,7 +28,7 @@ describe('Media object', () => {
 
   it('sizing visually looks correct', async () => {
     // APIs from jest-puppeteer
-    await page.goto('http://localhost:9009/iframe.html?id=components-media-object--sizing');
+    await page.goto('http://localhost:9009/iframe.html?id=components-pagination--sizing');
     const image = await page.screenshot();
 
     // API from jest-image-snapshot
@@ -37,7 +37,7 @@ describe('Media object', () => {
 
   it('alignment visually looks correct', async () => {
     // APIs from jest-puppeteer
-    await page.goto('http://localhost:9009/iframe.html?id=components-media-object--alignment');
+    await page.goto('http://localhost:9009/iframe.html?id=components-pagination--alignment');
     const image = await page.screenshot();
 
     // API from jest-image-snapshot

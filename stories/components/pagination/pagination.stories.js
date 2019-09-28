@@ -1,7 +1,7 @@
 import { document, console } from 'global';
 import { storiesOf } from '@storybook/html';
 
-storiesOf('Components/Media object', module)
+storiesOf('Components/Pagination', module)
   .addParameters({
     happo: false,
   })
