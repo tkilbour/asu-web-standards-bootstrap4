@@ -7,6 +7,7 @@
 
 // Apply variable overrides before importing Bootstrap’s Sass files
 @import 'variables/colors';
+@import 'variables/spacing';
 
 //== Bootstrap Required
 @import '../../node_modules/bootstrap/scss/functions';
