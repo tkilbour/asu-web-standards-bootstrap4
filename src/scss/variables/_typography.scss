@@ -1,10 +1,12 @@
-
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
 
-// Font
-$font-family-sans-serif: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+// ASU Brand Standard Fonts
+// Reference: https://brandguide.asu.edu/Elements-of-the-brand/Fonts
+
+$font-family-sans-serif: Arial, sans-serif;
+$font-family-base: $font-family-sans-serif;
 
 $font-weight-lighter: 100;
 $font-weight-light: 300;
@@ -12,144 +14,122 @@ $font-weight-normal: 400;
 $font-weight-bold: 700;
 $font-weight-bolder: 900;
 
-// Headings
-// bootstrap overridess
-$headings-line-height: 1.2;
-$headings-font-weight: 900;
+// Body Font Color
+$body-color: $asu-dark;
 
-// h1 class
-/* Extra-small, small and Medium devices */
-.h1-small {
-  font-size: 24px;
+// Text formatting
+.text-white {
+  color: $asu-light !important;
 }
 
-.h1-medium {
-  font-size: 30px;
+.text-underline {
+  text-decoration: underline;
 }
 
-.h1-large {
-  font-size: 36px;
+.text-capitalize {
+  text-transform: capitalize !important;
 }
 
-.h1-xl {
-  font-size: 56px;
-}
+/*
+  VANILLA BOOTSTRAP VARIABLES
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .h1-small {
-    font-size: 36px;
-  }
+// Body
+//
+// Settings for the `<body>` element.
 
-  .h1-medium {
-    font-size: 48px;
-  }
+$body-bg:                   $white !default;
+$body-color:                $gray-900 !default;
 
-  .h1-large {
-    font-size: 56px;
-  }
 
-  .h1-xl {
-    font-size: 72px;
-  }
-}
+// Links
+//
+// Style anchor elements.
 
-// h2 styles
-/* Extra-small, small and Medium devices */
-.h2-small {
-  font-size: 18px;
-}
+$link-color:                              theme-color("primary") !default;
+$link-decoration:                         none !default;
+$link-hover-color:                        darken($link-color, 15%) !default;
+$link-hover-decoration:                   underline !default;
+// Darken percentage for links with `.text-*` class (e.g. `.text-success`)
+$emphasized-link-hover-darken-percentage: 15% !default;
 
-.h2-medium {
-  font-size: 24px;
-}
+// Paragraphs
+//
+// Style p element.
 
-.h2-large {
-  font-size: 30px;
-}
+$paragraph-margin-bottom:   1rem !default;
 
-.h2-xl {
-  font-size: 34px;
-}
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .h2-small {
-    font-size: 24px;
-  }
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
+// stylelint-enable value-keyword-case
 
-  .h2-medium {
-    font-size: 36px;
-  }
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                $font-size-base * 1.25 !default;
+$font-size-sm:                $font-size-base * .875 !default;
 
-  .h2-large {
-    font-size: 48px;
-  }
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+$font-weight-bolder:          bolder !default;
 
-  .h2-xl {
-    font-size: 60px;
-  }
-}
+$font-weight-base:            $font-weight-normal !default;
+$line-height-base:            1.5 !default;
 
-// h3 styles
-/* Extra-small, small and Medium devices */
-.h3-small {
-  font-size: 16px;
-}
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
 
-.h3-medium {
-  font-size: 18px;
-}
+$headings-margin-bottom:      $spacer / 2 !default;
+$headings-font-family:        null !default;
+$headings-font-weight:        500 !default;
+$headings-line-height:        1.2 !default;
+$headings-color:              null !default;
 
-.h3-large {
-  font-size: 24px;
-}
+$display1-size:               6rem !default;
+$display2-size:               5.5rem !default;
+$display3-size:               4.5rem !default;
+$display4-size:               3.5rem !default;
 
-.h3-xl {
-  font-size: 30px;
-}
+$display1-weight:             300 !default;
+$display2-weight:             300 !default;
+$display3-weight:             300 !default;
+$display4-weight:             300 !default;
+$display-line-height:         $headings-line-height !default;
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .h3-small {
-    font-size: 18px;
-  }
+$lead-font-size:              $font-size-base * 1.25 !default;
+$lead-font-weight:            300 !default;
 
-  .h3-medium {
-    font-size: 21px;
-  }
+$small-font-size:             80% !default;
 
-  .h3-large {
-    font-size: 24px;
-  }
+$text-muted:                  $gray-600 !default;
 
-  .h3-xl {
-    font-size: 36px;
-  }
-}
+$blockquote-small-color:      $gray-600 !default;
+$blockquote-small-font-size:  $small-font-size !default;
+$blockquote-font-size:        $font-size-base * 1.25 !default;
 
-// Texts
-.text-xs {
-  font-size: 12px;
-  line-height: 1.4;
-}
+$hr-border-color:             rgba($black, .1) !default;
+$hr-border-width:             $border-width !default;
 
-.text-small {
-  font-size: 14px;
-  line-height: 1.4;
-}
+$mark-padding:                .2em !default;
 
-.text-medium {
-  font-size: 16px;
-  line-height: 1.4;
-}
+$dt-font-weight:              $font-weight-bold !default;
 
-.text-large {
-  font-size: 18px;
-  line-height: 1.4;
-}
+$kbd-box-shadow:              inset 0 -.1rem 0 rgba($black, .25) !default;
+$nested-kbd-font-weight:      $font-weight-bold !default;
 
-.text-xl {
-  font-size: 24px;
-  line-height: 1.4;
-}
+$list-inline-padding:         .5rem !default;
+
+$mark-bg:                     #fcf8e3 !default;
+
+$hr-margin-y:                 $spacer !default;
+
+*/
