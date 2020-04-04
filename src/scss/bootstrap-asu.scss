@@ -69,4 +69,4 @@ $colors: map-remove($colors,
 @import '../../node_modules/bootstrap/scss/print';
 
 //== FontAwesome
-// @import '/node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
