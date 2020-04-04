@@ -10,9 +10,8 @@
 
 <br />
 
-![GitHub package.json version](https://img.shields.io/github/package-json/v/gios-asu/asu-web-standards-bootstrap4.svg)
-[![Build Status](https://travis-ci.com/gios-asu/asu-web-standards-bootstrap4.svg?branch=develop)](https://travis-ci.com/gios-asu/asu-web-standards-bootstrap4)
-[![devDependencies Status](https://david-dm.org/gios-asu/asu-web-standards-bootstrap4/dev-status.svg)](https://david-dm.org/gios-asu/asu-web-standards-bootstrap4?type=dev)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/asu-ke-web-services/asu-web-standards-bootstrap4.svg)
+[![devDependencies Status](https://david-dm.org/asu-ke-web-services/asu-web-standards-bootstrap4/dev-status.svg)](https://david-dm.org/asu-ke-web-services/asu-web-standards-bootstrap4?type=dev)
 
 ![divider](./divider.png)
 
@@ -57,7 +56,7 @@
 
 ## ❯ Development Overview
 
-The goal of this project is to retheme the vanilla Bootstrap 4 UI Kit to meet ASU Web Standards Guidelines. The Bootstrap team have provided an [excellent guide](https://getbootstrap.com/docs/4.3/getting-started/theming/) on their suggested practices for this retheming process. The starting code committed in the `/src/scss/` folder is based on the suggestions of the Bootstrap theming guide and the lessons from the [GIOS Bootstrap 3 theme](https://github.com/gios-asu/ASU-Web-Standards-Bootstrap).
+The goal of this project is to retheme the vanilla Bootstrap 4 UI Kit to meet ASU Web Standards Guidelines. The Bootstrap team have provided an [excellent guide](https://getbootstrap.com/docs/4.3/getting-started/theming/) on their suggested practices for this retheming process. The starting code committed in the `/src/scss/` folder is based on the suggestions of the Bootstrap theming guide and the lessons from the [GIOS Bootstrap 3 theme](https://github.com/asu-ke-web-services/ASU-Web-Standards-Bootstrap).
 
 StorybookJS has been configured to be the primary, live development interface for this theme, and some example stories have been installed to demonstrate how Storybook works. Once you have followed the instructions for setting up a [local development environment](#-setup-local-development-environment), you will need to clone this project into a sutiable location on your local computer and initialize it for development tasks.
 
@@ -74,13 +73,17 @@ You need to set up your development environment before you can do anything.
 Typically, the easiest and most reliable way to manage Node.js and NPM on your desktop is via [NVM (Node Version Manager)](https://github.com/nvm-sh/nvm). NVM allows you install and switch between multiple versions of node, which may necessary depending on what projects you are helping to develop.
 
 On MacOS or Linux, you should be able to follow the standard install instructions and run the NVM install script on your terminal:
+
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 ```
+
 or
+
 ```
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 ```
+
 After installing nvm, if you get `nvm: command not found` error, close out your current terminal and reopen a new one.
 
 MacOS may require you install the Xcode Command Line Tools, if you haven't already for other development tasks in the past and you do not wish to install the full 4.3 GB Xcode framework:
@@ -90,7 +93,8 @@ MacOS may require you install the Xcode Command Line Tools, if you haven't alrea
 On Windows, you will need to install [nvm-windows](https://github.com/coreybutler/nvm-windows#node-version-manager-nvm-for-windows). Follow the instruction there for your setup.)
 
 If these methods fail for you, you can always use the traditional install method provided by [Node.js and NPM from nodejs.org](https://nodejs.org/en/download/)
- or to use:
+or to use:
+
 - on OSX use [homebrew](http://brew.sh) `brew install node`
 - on Windows use [chocolatey](https://chocolatey.org/) `choco install nodejs`
 
@@ -99,7 +103,9 @@ Once you have node and npm installed (included automatically with node), verify 
 ```
 node -v
 ```
+
 and
+
 ```
 npm -v
 ```
@@ -121,6 +127,7 @@ Next, install yarn globally
 ```bash
 npm install yarn -g
 ```
+
 Yarn is an alternative package manager to `npm`. In particular, yarn provides performance and added features for monorepos and other configuration elements in our project.
 
 ### Install VS Code
@@ -132,7 +139,6 @@ Browse to the [VS Code homepage](https://code.visualstudio.com/) and click on th
 3. Begin exploring!
 
 A Workspace in VS Code is your project workspace and special settings you choose to configure for the project (vs global settings that affect the entire IDE and any projects you ever work on.) You can save your project as a Workspace [File->Save Workspace As], which makes it easier to track your project and reload it and your settings in the future.
-
 
 ![divider](./divider.png)
 
@@ -149,7 +155,7 @@ cd ~
 mkdir projects
 cd projects
 
-git clone https://github.com/gios-asu/asu-web-standards-bootstrap4
+git clone https://github.com/asu-ke-web-services/asu-web-standards-bootstrap4
 cd asu-web-standards-bootstrap4
 ```
 
@@ -189,13 +195,13 @@ yarn test:integration
 
 [GulpJS](https://gulpjs.com/) is a toolkit for automating tasks, and is used in this project for performing common tasks to prepare the project for production releases. Currently, Gulp is configured to perform the following tasks:
 
-* Compile SASS/SCSS source code into CSS
-* Lint (validate code for coding standards) SASS source code
-* Lint Javascript code
-* Optimize any images included in the framework
-* Compress the compiled CSS into .min.css files
-* Concatenate and compress the utility javascripts files
-* Perform housecleaning tasks on output folders
+- Compile SASS/SCSS source code into CSS
+- Lint (validate code for coding standards) SASS source code
+- Lint Javascript code
+- Optimize any images included in the framework
+- Compress the compiled CSS into .min.css files
+- Concatenate and compress the utility javascripts files
+- Perform housecleaning tasks on output folders
 
 Two top-level Gulp tasks have been configured to execute all necessaary sub-tasks to validate and compile the production output of this theme:
 
@@ -218,6 +224,8 @@ yarn gulp scripts       # Concatenate and minify the scripts into `/dist/js/`
 yarn gulp copy-assets   # Copy font-awesome fonts into `/dist/fonts/`
 yarn gulp clean-dist    # Delete the contents of `/dist/`
 yarn gulp styles        # Execute the 'sass' and 'minifycss' sub-tasks
+yarn gulp validate      # Execute the 'eslint' and 'sasslint' tasks
+yarn gulp compile       # Execute all tasks to geenrate a fresh production build
 yarn gulp               # Execute the default Gulp task (validate)
 ```
 
@@ -225,21 +233,19 @@ yarn gulp               # Execute the default Gulp task (validate)
 
 #### TODO
 
-
 ![divider](./divider.png)
 
 ## ❯ Project Structure
 
-| Name                              | Description |
-| --------------------------------- | ----------- |
-| **.vscode/**                      | VSCode tasks, launch configuration and some other settings |
-| **dist/**                         | Compiled source files will be placed here |
-| **src/**                          | Source files |
-| **stories/**                      | Storybook stories and tests for UI components |
-| **test**                          | Separate tests folder |
-| **test/e2e/** *.test.ts           | End-2-End tests (Not Yet Implemented) |
-| **test/integration/** *.test.ts   | Integration tests (Not Yet Implemented) |
-
+| Name                             | Description                                                |
+| -------------------------------- | ---------------------------------------------------------- |
+| **.vscode/**                     | VSCode tasks, launch configuration and some other settings |
+| **dist/**                        | Compiled source files will be placed here                  |
+| **src/**                         | Source files                                               |
+| **stories/**                     | Storybook stories and tests for UI components              |
+| **test**                         | Separate tests folder                                      |
+| **test/e2e/** \*.test.ts         | End-2-End tests (Not Yet Implemented)                      |
+| **test/integration/** \*.test.ts | Integration tests (Not Yet Implemented)                    |
 
 ![divider](./divider.png)
 
@@ -251,12 +257,12 @@ View our [Contributing Guidelines](./CONTRIBUTING.md)
 
 ## ❯ Further Documentation
 
-| Name & Link                       | Description                       |
-| --------------------------------- | --------------------------------- |
+| Name & Link                                                                    | Description                                                                                                                                                                                                                                                                                                                                                                     |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Bootstrap 4](https://getbootstrap.com/docs/4.3/getting-started/introduction/) | Build responsive, mobile-first projects on the web with the world’s most popular front-end component library. Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery. |
-| [Font Awesome 5](https://fontawesome.com/) | Get vector icons and social logos on your website with Font Awesome, the web's most popular icon set and toolkit. |
-| [StorybookJS](https://storybook.js.org/) | Storybook is an open source tool for developing UI components in isolation for React, Vue, and Angular. It makes building stunning UIs organized and efficient. |
-| [Jest](https://jestjs.io/) | Jest is a delightful JavaScript Testing Framework with a focus on simplicity. |
+| [Font Awesome 5](https://fontawesome.com/)                                     | Get vector icons and social logos on your website with Font Awesome, the web's most popular icon set and toolkit.                                                                                                                                                                                                                                                               |
+| [StorybookJS](https://storybook.js.org/)                                       | Storybook is an open source tool for developing UI components in isolation for React, Vue, and Angular. It makes building stunning UIs organized and efficient.                                                                                                                                                                                                                 |
+| [Jest](https://jestjs.io/)                                                     | Jest is a delightful JavaScript Testing Framework with a focus on simplicity.                                                                                                                                                                                                                                                                                                   |
 
 ![divider](./divider.png)
 
