@@ -16,7 +16,21 @@
 @import '../../node_modules/bootstrap/scss/mixins';
 
 // To remove values from Bootstrap maps, these must occur between Required and Optional imports.
-// $theme-colors: map-remove($theme-colors, "info", "light", "dark");
+// clean the vanilla colors from 'colors' map
+$colors: map-remove($colors,
+  'blue',
+  'indigo',
+  'purple',
+  'pink',
+  'red',
+  'orange',
+  'yellow',
+  'green',
+  'teal',
+  'cyan',
+  'gray',
+  'gray-dark'
+);
 
 //= Bootstrap Scaffolding (optional)
 @import '../../node_modules/bootstrap/scss/root';
