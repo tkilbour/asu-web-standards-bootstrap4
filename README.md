@@ -11,7 +11,6 @@
 <br />
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/asu-ke-web-services/asu-web-standards-bootstrap4.svg)
-[![Build Status](https://travis-ci.com/asu-ke-web-services/asu-web-standards-bootstrap4.svg?branch=develop)](https://travis-ci.com/asu-ke-web-services/asu-web-standards-bootstrap4)
 [![devDependencies Status](https://david-dm.org/asu-ke-web-services/asu-web-standards-bootstrap4/dev-status.svg)](https://david-dm.org/asu-ke-web-services/asu-web-standards-bootstrap4?type=dev)
 
 ![divider](./divider.png)
