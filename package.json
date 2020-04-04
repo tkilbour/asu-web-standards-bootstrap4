@@ -20,7 +20,7 @@
     "@babel/core": "^7.4.5",
     "@fortawesome/fontawesome-free": "^5.9.0",
     "@storybook/addon-a11y": "^5.1.9",
-    "@storybook/addon-google-analytics": "^5.1.9",
+    "@storybook/addon-google-analytics": "^5.3.18",
     "@storybook/addon-jest": "^5.1.9",
     "@storybook/addon-viewport": "^5.1.9",
     "@storybook/html": "^5.1.9",
