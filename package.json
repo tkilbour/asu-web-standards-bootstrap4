@@ -20,6 +20,7 @@
     "ASU Fulton Schools of Engineering"
   ],
   "scripts": {
+    "release": "npm login --registry=https://npm.pkg.github.com && npm publish",
     "jest:integration": "jest -c jest.config.js --maxWorkers=2",
     "test:integration": "start-server-and-test storybook http-get://localhost:9009 jest:integration",
     "test:generate-output": "jest --json --outputFile=.jest-test-results.json || true",
