@@ -1,12 +1,24 @@
 {
-  "name": "asu-web-standards-bootstrap4-prototype",
-  "version": "1.0.0-alpha1",
-  "description": "Preliminary scaffolding for the new ASU web Standards Bootstrap 4 project",
-  "main": "index.js",
-  "repository": "https://github.com/gios-asu/asu-web-standards-bootstrap4-prototype.git",
-  "author": "Nathan Rollins <nathan.rollins@asu.edu>",
+  "name": "asu-web-standards-bootstrap4",
+  "version": "1.0.0",
+  "description": "ASU Web Standards Bootstrap 4 CMS-independent UI kit",
+  "style": "dist/css/bootstrap.css",
+  "sass": "src/scss/bootstrap.scss",
+  "main": "dist/js/bootstrap",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asu-ke-web-services/asu-web-standards-bootstrap4.git"
+  },
+  "bugs": {
+    "url": "https://github.com/asu-ke-web-services/asu-web-standards-bootstrap4/issues"
+  },
   "license": "MIT",
-  "private": true,
+  "author": "Arizona State University",
+  "contributors": [
+    "ASU University Technology Office",
+    "ASU Knowledge Enterprise",
+    "ASU Fulton Schools of Engineering"
+  ],
   "scripts": {
     "jest:integration": "jest -c jest.config.js --maxWorkers=2",
     "test:integration": "start-server-and-test storybook http-get://localhost:9009 jest:integration",
