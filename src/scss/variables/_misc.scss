@@ -1,0 +1,57 @@
+// Headings
+h1 {
+  font-size:64px;
+  font-weight:700;
+  line-height: 68px;
+  letter-spacing:-0.035em;
+}
+h2 {
+  font-size:40px;
+  font-weight:700;
+  line-height: 44px;
+  letter-spacing:-0.035em;
+}
+h3 {
+  font-size:24px;
+  font-weight:700;
+  line-height: 28px;
+  letter-spacing:-0.035em;
+}
+h4 {
+  font-size:20px;
+  font-weight:700;
+  line-height: 26px;
+  letter-spacing:-0.025em;
+}
+h5 {
+  font-size:16px;
+  font-weight:700;
+  line-height: 24px;
+  letter-spacing:-0.015em;
+}
+.btn {
+  text-decoration:none;
+}
+.page-link {
+  border-radius:400px;
+  text-decoration: none;
+  font-weight:bold;
+}
+.page-item:last-child .page-link {
+  border-radius:400px;
+}
+.page-item:first-child .page-link {
+  border-radius:400px;
+}
+.nav-tabs .nav-link {
+  color:#000;
+  padding: 0.25em 1em;
+  border-right:0;
+  border-left:0;
+  border-top:0;
+  text-decoration:none;
+  font-weight:bold;
+}
+.nav-tabs .nav-link.active {
+  border-bottom: solid 4px !important; /* Temp */
+}

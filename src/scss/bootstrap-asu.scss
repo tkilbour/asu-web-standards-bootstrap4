@@ -10,6 +10,7 @@
 @import 'variables/spacing';
 @import 'variables/typography';
 
+
 //== Bootstrap Required
 @import '../../node_modules/bootstrap/scss/functions';
 @import '../../node_modules/bootstrap/scss/variables';
@@ -70,3 +71,5 @@ $colors: map-remove($colors,
 
 //== FontAwesome
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+
+@import 'variables/misc';

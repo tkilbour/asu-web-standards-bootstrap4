@@ -20,8 +20,8 @@ $asu-light: #fafafa;
 $asu-dark: #2a2a2a; // used for 'body' text
 
 // Bootstrap modifier colors
-$primary: $maroon;
-$secondary: $asu-gray;
+$primary: $gold;
+$secondary: $maroon;
 $success: $asu-success;
 $info: $asu-info;
 $warning: $asu-warning;
@@ -55,3 +55,21 @@ $theme-colors: (
   'rfi': $asu-rfi,
   'program': $asu-program,
 );
+
+$pagination-color:                  $asu-dark;
+$pagination-border-width:           0;
+$pagination-border-color:           $white;
+$pagination-outline:                0;
+
+$pagination-focus-outline:          0;
+
+$pagination-active-color:           $white;
+$pagination-active-bg:              $maroon;
+$pagination-active-border-color:    $maroon;
+
+$nav-tabs-link-color:               $asu-dark;
+$nav-tabs-border-width:             1px;
+$nav-tabs-border-color:             $asu-gray;
+$nav-tabs-border-radius:            0;
+$nav-tabs-link-active-color:        $maroon;
+$nav-tabs-link-active-border-color: $maroon;
