@@ -17,17 +17,19 @@ $asu-warning: #ec5937;
 $asu-danger: #bfe319;
 $asu-gray: #dbdbdb; // used for 'secondary' color variant (e.g. btn-secondary)
 $asu-light: #fafafa;
+$asu-light-gray: #e8e8e8;
 $asu-dark: #2a2a2a; // used for 'body' text
 
 // Bootstrap modifier colors
-$primary: $gold;
-$secondary: $maroon;
+$primary: $maroon;
+$secondary: $gold;
 $success: $asu-success;
 $info: $asu-info;
 $warning: $asu-warning;
 $danger: $asu-danger;
 $asu-rfi: $gold;
 $asu-program: $blue;
+$dark: $asu-dark;
 
 $colors: () !default;
 $colors: map-merge(
