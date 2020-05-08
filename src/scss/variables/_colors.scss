@@ -58,6 +58,8 @@ $theme-colors: (
   'program': $asu-program,
 );
 
+$card-cap-bg:                       rgba($white, .03);
+
 $pagination-color:                  $asu-dark;
 $pagination-border-width:           0;
 $pagination-border-color:           $white;
