@@ -183,3 +183,9 @@ label {
 .card-event .card-header {
   border-top: solid 4px $gold;
 }
+.bg-dark a, .bg-primary a, .bg-black a {
+  color:$asu-light;
+}
+.bg-light a, .bg-secondary a, .bg-white a {
+  color:$primary;
+}

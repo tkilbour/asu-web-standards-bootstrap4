@@ -48,6 +48,7 @@ $colors: map-merge(
     'asu-danger': $asu-danger,
     'asu-gray': $asu-gray,
     'asu-light': $asu-light,
+    'asu-light-gray': $asu-light-gray,
     'asu-dark': $asu-dark,
   ),
     $colors
@@ -64,6 +65,7 @@ $pagination-color:                  $asu-dark;
 $pagination-border-width:           0;
 $pagination-border-color:           $white;
 $pagination-outline:                0;
+$pagination-line-height:            1;
 
 $pagination-focus-outline:          0;
 

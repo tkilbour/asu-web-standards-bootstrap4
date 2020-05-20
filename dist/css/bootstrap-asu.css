@@ -27,6 +27,7 @@
   --asu-danger: #bfe319;
   --asu-gray: #dbdbdb;
   --asu-light: #fafafa;
+  --asu-light-gray: #e8e8e8;
   --asu-dark: #2a2a2a;
   --primary: #8c1d40;
   --secondary: #ffc627;
@@ -4873,7 +4874,7 @@ input[type="button"].btn-block {
   display: block;
   padding: 0.5rem 0.75rem;
   margin-left: 0;
-  line-height: 1.25;
+  line-height: 1;
   color: #2a2a2a;
   background-color: #ffffff;
   border: 0 solid #ffffff;
@@ -19739,4 +19740,12 @@ label {
 
 .card-event .card-header {
   border-top: solid 4px #ffc627;
+}
+
+.bg-dark a, .bg-primary a, .bg-black a {
+  color: #fafafa;
+}
+
+.bg-light a, .bg-secondary a, .bg-white a {
+  color: #8c1d40;
 }
